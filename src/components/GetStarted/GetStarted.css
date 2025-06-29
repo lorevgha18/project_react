@@ -1,0 +1,67 @@
+.g-wrapper {
+    padding: 4rem 0;
+    display: flex;
+    justify-content: center;
+    background: #f0f4ff;
+}
+
+.g-container {
+    width: 100%;
+    max-width: 1100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inner-container {
+    gap: 1.5rem;
+    background: #4161df;
+    padding: 2rem;
+    border-radius: 10px;
+    border: 6px solid #5d77d6;
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%; /* or set to 90%, 600px, etc. */
+    max-width: 3000px; /* adjust as needed */
+}
+
+
+.inner-container .primaryText {
+    font-size: 2rem;
+    color: white;
+    font-weight: 600;
+}
+
+.inner-container .secondaryText {
+    color: rgba(255, 255, 255, 0.605)
+}
+
+.button-wrapper {
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: center;
+}
+
+.get-started-button {
+    background: linear-gradient(145deg, #3558d4, #274ddc);
+    color: white;
+    font-weight: 600;
+    font-size: 1rem;
+    padding: 0.8rem 2.2rem;
+    border-radius: 10px;
+    text-decoration: none;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    display: inline-block;
+    text-align: center;
+}
+
+.get-started-button:hover {
+    transform: translateY(-2px);
+    background: linear-gradient(145deg, #274ddc, #1f3fb8);
+    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.3);
+}
+

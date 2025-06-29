@@ -1,0 +1,104 @@
+v-contianer .image-container {
+    border: 8px solid rgba(232 232 232 / 93%);
+}
+
+.v-container>div {
+    flex: 1
+}
+
+.v-right {
+    gap: 0.5rem;
+}
+
+
+/* Accordion wrapper */
+.accordion {
+    margin-top: 2rem;
+    width: 100%;
+}
+
+/* Accordion item styling */
+.accordionItem {
+    background: white;
+    border: 8px solid rgba(232, 232, 232, 0.93); /* Uniform 8px border */
+    border-radius: 12px;
+    box-shadow: none;
+    overflow: hidden;
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+}
+
+.accordionItem .expanded{
+    box-shadow: var(--shadow);
+    border-radius: 5px;
+}
+
+/* Accordion button */
+.accordianButton {
+    background: white;
+    padding: 1rem 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 1.05rem;
+    gap: 1rem;
+}
+
+/* Icon container */
+.icon {
+    padding: 6px;
+    background: #eeeeff;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon svg {
+    fill: var(--blue, #407bff); /* fallback in case variable isn't defined */
+    width: 20px;
+    height: 20px;
+}
+
+/* Dropdown arrow */
+.dropdown-icon {
+    margin-left: auto;
+    color: var(--blue, #407bff);
+}
+
+/* Accordion content */
+.accordionItemPanel {
+    padding: 0 1.2rem 1rem 1.2rem;
+}
+
+.primaryText {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #1f3e72;
+}
+
+.orangeText {
+    color: orange;
+    font-weight: 600;
+}
+
+.secondaryText {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+@media (max-width: 1024px) {
+    .v-container {
+        flex-direction: column;
+    }
+
+    @media (max-width: 768px) {
+        .accordianButton .primaryText {
+            font-size: 0.8rem;
+        } 
+    }
+}
